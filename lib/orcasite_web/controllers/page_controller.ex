@@ -4,4 +4,9 @@ defmodule OrcasiteWeb.PageController do
   def index(conn, _params) do
     render conn, "index.html"
   end
+
+
+  def teachingui(conn, _params) do
+    render conn, "teachingui.html"
+  end
 end

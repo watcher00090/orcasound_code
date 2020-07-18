@@ -31,7 +31,11 @@ defmodule OrcasiteWeb.Router do
 
   scope "/", OrcasiteWeb do
     pipe_through :browser # Use the default browser stack
-    get("/*page", PageController, :index)
+  #  get("/*page", PageController, :index)
+    get("/", PageController, :index)
+    get("/teachingui", PageController, :teachingui)
   end
+
+
 
 end
